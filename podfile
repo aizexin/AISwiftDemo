@@ -1,13 +1,32 @@
+#-------------- General Setting -------------
 platform :ios, '12.0'
-source 'https://gitee.com/mirrors/CocoaPods-Specs.git'
-#use_frameworks!
-use_modular_headers!
+project 'AISwiftDemo.xcodeproj'
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
 
-install! 'cocoapods', :deterministic_uuids => false
+#---------------- Parameters ----------------
 
-target 'AISwiftDemo' do
-  
+#---------------- Pod Defining --------------
 
-
+def general_pods
+  pod 'ChameleonFramework'
+  pod 'Hero'
+  pod 'lottie-ios'
 end
 
+def debug_pods
+  pod 'HockeySDK'
+  pod 'XFAssistiveTouch'
+  pod 'FLEX', '~> 2.0'
+end
+
+
+#----------- Swift Version Setting ----------
+
+
+#----------------- Targets ------------------
+
+target 'AISwiftDemo' do
+    general_pods
+    debug_pods
+end
