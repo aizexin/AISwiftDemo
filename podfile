@@ -9,15 +9,17 @@ use_frameworks!
 #---------------- Pod Defining --------------
 
 def general_pods
-  pod 'ChameleonFramework'
-  pod 'Hero'
-  pod 'lottie-ios'
+#  pod 'ChameleonFramework'
+#  pod 'Hero'
+#  pod 'lottie-ios'
+#  
 end
 
 def debug_pods
-  pod 'HockeySDK'
-  pod 'XFAssistiveTouch'
-  pod 'FLEX', '~> 2.0'
+  pod 'SwiftLint'
+#  pod 'HockeySDK'
+#  pod 'XFAssistiveTouch'
+#  pod 'FLEX', '~> 2.0'
 end
 
 
