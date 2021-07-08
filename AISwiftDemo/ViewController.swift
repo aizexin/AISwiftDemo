@@ -12,15 +12,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        test()
     }
 }
 
 func test() {
-    print("111")
-    print("111")
-    print("111")
-    print("111")
-    print("111")
-    print("111")
-    print("111")
+    let str = NSLocalizedString("test", comment: "")
+    print("111",str)
 }

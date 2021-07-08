@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16BB609EB39301964E989442 /* Pods_AISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */; };
 		4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586712E265A8DBC00FDA592 /* AppDelegate.swift */; };
 		45867131265A8DBC00FDA592 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867130265A8DBC00FDA592 /* SceneDelegate.swift */; };
 		45867133265A8DBC00FDA592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867132265A8DBC00FDA592 /* ViewController.swift */; };
@@ -15,7 +16,7 @@
 		4586713B265A8DBD00FDA592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */; };
 		45867146265A8DBD00FDA592 /* AISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867145265A8DBD00FDA592 /* AISwiftDemoTests.swift */; };
 		45867151265A8DBD00FDA592 /* AISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */; };
-		9B84EB6EAE0FBA877B72DF4A /* libPods-AISwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4857D801F8D9F098A4F81CC3 /* libPods-AISwiftDemo.a */; };
+		45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45ECD2E72696CCED00F75B26 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,11 @@
 		4586714C265A8DBD00FDA592 /* AISwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AISwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISwiftDemoUITests.swift; sourceTree = "<group>"; };
 		45867152265A8DBD00FDA592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4857D801F8D9F098A4F81CC3 /* libPods-AISwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AISwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ECD2E12696A75100F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		45ECD2E22696A75100F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		45ECD2E62696CCED00F75B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		45ECD2E82696CD1E00F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9DE93B07C00C7A90CB63BD /* Pods-AISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F416205A6B526F49E72EA5A8 /* Pods-AISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B84EB6EAE0FBA877B72DF4A /* libPods-AISwiftDemo.a in Frameworks */,
+				16BB609EB39301964E989442 /* Pods_AISwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,7 @@
 				45867137265A8DBD00FDA592 /* Assets.xcassets */,
 				45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */,
 				4586713C265A8DBD00FDA592 /* Info.plist */,
+				45ECD2E72696CCED00F75B26 /* Localizable.strings */,
 			);
 			path = AISwiftDemo;
 			sourceTree = "<group>";
@@ -147,7 +153,7 @@
 		6340BD41493C54989E691EA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4857D801F8D9F098A4F81CC3 /* libPods-AISwiftDemo.a */,
+				636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 				45867128265A8DBC00FDA592 /* Frameworks */,
 				45867129265A8DBC00FDA592 /* Resources */,
 				45ECD2E02695ABB800F75B26 /* Run Script swiftLint */,
+				45ECD2E92696D07200F75B26 /* Run Script swiftGen */,
 			);
 			buildRules = (
 			);
@@ -239,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 45867122265A8DBC00FDA592;
 			productRefGroup = 4586712C265A8DBC00FDA592 /* Products */;
@@ -258,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4586713B265A8DBD00FDA592 /* LaunchScreen.storyboard in Resources */,
+				45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */,
 				45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */,
 				45867136265A8DBC00FDA592 /* Main.storyboard in Resources */,
 			);
@@ -297,6 +306,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		45ECD2E92696D07200F75B26 /* Run Script swiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script swiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
 		};
 		EB36B793B276B6989316884B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -369,6 +396,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45867135265A8DBC00FDA592 /* Base */,
+				45ECD2E12696A75100F75B26 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -377,8 +405,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				4586713A265A8DBD00FDA592 /* Base */,
+				45ECD2E22696A75100F75B26 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		45ECD2E72696CCED00F75B26 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45ECD2E62696CCED00F75B26 /* en */,
+				45ECD2E82696CD1E00F75B26 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -449,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
