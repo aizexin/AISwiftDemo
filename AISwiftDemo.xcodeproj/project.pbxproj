@@ -111,14 +111,14 @@
 		4586712D265A8DBC00FDA592 /* AISwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4586712E265A8DBC00FDA592 /* AppDelegate.swift */,
+				45ECD2EC2696E66700F75B26 /* DataBase */,
+				45ECD2EB2696E64100F75B26 /* Debug */,
+				45ECD2EA2696E5DF00F75B26 /* Configures */,
 				45867130265A8DBC00FDA592 /* SceneDelegate.swift */,
+				45ECD2ED2696EA3700F75B26 /* SupportFile */,
 				45867132265A8DBC00FDA592 /* ViewController.swift */,
-				45867134265A8DBC00FDA592 /* Main.storyboard */,
-				45867137265A8DBD00FDA592 /* Assets.xcassets */,
-				45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */,
+				4586712E265A8DBC00FDA592 /* AppDelegate.swift */,
 				4586713C265A8DBD00FDA592 /* Info.plist */,
-				45ECD2E72696CCED00F75B26 /* Localizable.strings */,
 			);
 			path = AISwiftDemo;
 			sourceTree = "<group>";
@@ -139,6 +139,38 @@
 				45867152265A8DBD00FDA592 /* Info.plist */,
 			);
 			path = AISwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		45ECD2EA2696E5DF00F75B26 /* Configures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configures;
+			sourceTree = "<group>";
+		};
+		45ECD2EB2696E64100F75B26 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		45ECD2EC2696E66700F75B26 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		45ECD2ED2696EA3700F75B26 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				45867134265A8DBC00FDA592 /* Main.storyboard */,
+				45867137265A8DBD00FDA592 /* Assets.xcassets */,
+				45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */,
+				45ECD2E72696CCED00F75B26 /* Localizable.strings */,
+			);
+			path = SupportFile;
 			sourceTree = "<group>";
 		};
 		4B1C6D4CDC9CCAD486EBBEE9 /* Pods */ = {
