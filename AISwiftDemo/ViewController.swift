@@ -19,4 +19,6 @@ class ViewController: UIViewController {
 func test() {
     let str = NSLocalizedString("test", comment: "")
     print("111",str)
+    let host = ConfigureModel.sharedInstance.getHost()
+    print(host)
 }

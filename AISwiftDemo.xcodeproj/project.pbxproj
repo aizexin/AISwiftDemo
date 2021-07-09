@@ -17,6 +17,9 @@
 		45867146265A8DBD00FDA592 /* AISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867145265A8DBD00FDA592 /* AISwiftDemoTests.swift */; };
 		45867151265A8DBD00FDA592 /* AISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */; };
 		45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45ECD2E72696CCED00F75B26 /* Localizable.strings */; };
+		45ECD3392697F2F900F75B26 /* ConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3382697F2F900F75B26 /* ConfigureModel.swift */; };
+		45ECD33A2697F2F900F75B26 /* ConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3382697F2F900F75B26 /* ConfigureModel.swift */; };
+		45ECD33B2697F2F900F75B26 /* ConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3382697F2F900F75B26 /* ConfigureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		45ECD2E22696A75100F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		45ECD2E62696CCED00F75B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45ECD2E82696CD1E00F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		45ECD2F02697F2F100F75B26 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		45ECD2FA2697F2F100F75B26 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		45ECD3382697F2F900F75B26 /* ConfigureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureModel.swift; sourceTree = "<group>"; };
 		636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9DE93B07C00C7A90CB63BD /* Pods-AISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F416205A6B526F49E72EA5A8 /* Pods-AISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 		45ECD2EA2696E5DF00F75B26 /* Configures */ = {
 			isa = PBXGroup;
 			children = (
+				45ECD3382697F2F900F75B26 /* ConfigureModel.swift */,
+				45ECD2EE2697F2F100F75B26 /* Debug */,
+				45ECD2F82697F2F100F75B26 /* Release */,
 			);
 			path = Configures;
 			sourceTree = "<group>";
@@ -171,6 +180,22 @@
 				45ECD2E72696CCED00F75B26 /* Localizable.strings */,
 			);
 			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		45ECD2EE2697F2F100F75B26 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				45ECD2F02697F2F100F75B26 /* Configuration.plist */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		45ECD2F82697F2F100F75B26 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				45ECD2FA2697F2F100F75B26 /* Configuration.plist */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		};
 		4B1C6D4CDC9CCAD486EBBEE9 /* Pods */ = {
@@ -203,6 +228,7 @@
 				45867129265A8DBC00FDA592 /* Resources */,
 				45ECD2E02695ABB800F75B26 /* Run Script swiftLint */,
 				45ECD2E92696D07200F75B26 /* Run Script swiftGen */,
+				45ECD33C2697F77100F75B26 /* Run Script configures */,
 			);
 			buildRules = (
 			);
@@ -357,6 +383,24 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
 		};
+		45ECD33C2697F77100F75B26 /* Run Script configures */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script configures";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"CONFIGURATION -> ${CONFIGURATION}\"\nRESOURCE_PATH=${SRCROOT}/${PRODUCT_NAME}/Configures/${CONFIGURATION}\n\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho \"Copying all files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"\n";
+		};
 		EB36B793B276B6989316884B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +432,7 @@
 			files = (
 				45867133265A8DBC00FDA592 /* ViewController.swift in Sources */,
 				4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */,
+				45ECD3392697F2F900F75B26 /* ConfigureModel.swift in Sources */,
 				45867131265A8DBC00FDA592 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45ECD33A2697F2F900F75B26 /* ConfigureModel.swift in Sources */,
 				45867146265A8DBD00FDA592 /* AISwiftDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45ECD33B2697F2F900F75B26 /* ConfigureModel.swift in Sources */,
 				45867151265A8DBD00FDA592 /* AISwiftDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,12 +626,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CustomBuildleID = aiswiftdemo.AISwiftDemo_debug;
+				CustomProductName = AISwiftDemo_debug;
 				INFOPLIST_FILE = AISwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = aiswiftdemo.AISwiftDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,12 +647,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CustomBuildleID = aiswiftdemo.AISwiftDemo_release;
+				CustomProductName = AISwiftDemo_release;
 				INFOPLIST_FILE = AISwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = aiswiftdemo.AISwiftDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
