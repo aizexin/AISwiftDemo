@@ -1,20 +1,26 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - SwiftGen (6.4.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
+  - ChameleonFramework
   - SwiftGen (~> 6.0)
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - ChameleonFramework
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 9bde0e7159faf2f56b6e509981faa531e0a1c12c
+PODFILE CHECKSUM: f6d0bd83da5c1aa0bf4c7875798883a92cf4477e
 
 COCOAPODS: 1.10.1

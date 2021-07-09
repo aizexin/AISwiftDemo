@@ -5,4 +5,5 @@
   Created by aizexin on 2021/7/8.
   
 */
-"test" = "简体中文";
+//MARK:-tab----
+"tab_my" = "我的";

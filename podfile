@@ -9,7 +9,7 @@ use_frameworks!
 #---------------- Pod Defining --------------
 
 def general_pods
-#  pod 'ChameleonFramework'
+  pod 'ChameleonFramework'
 #  pod 'Hero'
 #  pod 'lottie-ios'
     
