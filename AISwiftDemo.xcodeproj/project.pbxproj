@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16BB609EB39301964E989442 /* Pods_AISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */; };
+		4502BD2326B2418900A348A0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4502BD2226B2418900A348A0 /* swiftgen.yml */; };
 		4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586712E265A8DBC00FDA592 /* AppDelegate.swift */; };
 		45867136265A8DBC00FDA592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45867134265A8DBC00FDA592 /* Main.storyboard */; };
 		45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45867137265A8DBD00FDA592 /* Assets.xcassets */; };
@@ -25,6 +26,9 @@
 		45ECD34D269826AF00F75B26 /* MyProfileBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD34C269826AF00F75B26 /* MyProfileBaseViewController.swift */; };
 		45ECD34F26982B4700F75B26 /* MyProfileViewEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD34E26982B4700F75B26 /* MyProfileViewEnum.swift */; };
 		45ECD35126982BD300F75B26 /* MainFlowViewEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD35026982BD300F75B26 /* MainFlowViewEnum.swift */; };
+		45F57ED826B38F0C00D926E0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F57ED726B38F0C00D926E0 /* Colors.xcassets */; };
+		45F57EDA26B391B800D926E0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F57ED926B391B800D926E0 /* Assets.swift */; };
+		45F57EDD26B3955900D926E0 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F57EDC26B3955900D926E0 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4502BD2226B2418900A348A0 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		4586712B265A8DBC00FDA592 /* AISwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4586712E265A8DBC00FDA592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45867135265A8DBC00FDA592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +76,10 @@
 		45ECD34C269826AF00F75B26 /* MyProfileBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileBaseViewController.swift; sourceTree = "<group>"; };
 		45ECD34E26982B4700F75B26 /* MyProfileViewEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewEnum.swift; sourceTree = "<group>"; };
 		45ECD35026982BD300F75B26 /* MainFlowViewEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowViewEnum.swift; sourceTree = "<group>"; };
+		45F57ED726B38F0C00D926E0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		45F57ED926B391B800D926E0 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		45F57EDB26B3942A00D926E0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		45F57EDC26B3955900D926E0 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9DE93B07C00C7A90CB63BD /* Pods-AISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F416205A6B526F49E72EA5A8 /* Pods-AISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,10 +194,14 @@
 		45ECD2ED2696EA3700F75B26 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
+				45F57ED226B3836C00D926E0 /* SwiftGen */,
+				4502BD2226B2418900A348A0 /* swiftgen.yml */,
+				45F57EDB26B3942A00D926E0 /* .swiftlint.yml */,
 				45867134265A8DBC00FDA592 /* Main.storyboard */,
 				45867137265A8DBD00FDA592 /* Assets.xcassets */,
 				45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */,
 				45ECD2E72696CCED00F75B26 /* Localizable.strings */,
+				45F57ED726B38F0C00D926E0 /* Colors.xcassets */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
@@ -251,6 +264,15 @@
 				45ECD34E26982B4700F75B26 /* MyProfileViewEnum.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		45F57ED226B3836C00D926E0 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				45F57ED926B391B800D926E0 /* Assets.swift */,
+				45F57EDC26B3955900D926E0 /* Strings.swift */,
+			);
+			path = SwiftGen;
 			sourceTree = "<group>";
 		};
 		4B1C6D4CDC9CCAD486EBBEE9 /* Pods */ = {
@@ -380,7 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4586713B265A8DBD00FDA592 /* LaunchScreen.storyboard in Resources */,
+				4502BD2326B2418900A348A0 /* swiftgen.yml in Resources */,
 				45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */,
+				45F57ED826B38F0C00D926E0 /* Colors.xcassets in Resources */,
 				45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */,
 				45867136265A8DBC00FDA592 /* Main.storyboard in Resources */,
 			);
@@ -504,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45ECD3472698257A00F75B26 /* MainViewController.swift in Sources */,
+				45F57EDD26B3955900D926E0 /* Strings.swift in Sources */,
 				4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */,
 				45ECD34F26982B4700F75B26 /* MyProfileViewEnum.swift in Sources */,
 				45ECD34D269826AF00F75B26 /* MyProfileBaseViewController.swift in Sources */,
@@ -511,6 +536,7 @@
 				45ECD3392697F2F900F75B26 /* ConfigureModel.swift in Sources */,
 				45ECD33E269813CC00F75B26 /* AIDebugLog.swift in Sources */,
 				45ECD34B2698263E00F75B26 /* MyProfileViewController.swift in Sources */,
+				45F57EDA26B391B800D926E0 /* Assets.swift in Sources */,
 				45ECD34326981E3E00F75B26 /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

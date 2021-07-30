@@ -1,6 +1,0 @@
-strings:
-  inputs: /Users/aizexin/Documents/workspace/AISwiftDemo/AISwiftDemo/en.lproj
-  outputs:
-    templateName: structured-swift5
-    output: /Users/aizexin/Documents/workspace/AISwiftDemo/AISwiftDemo/AIStrings.swift
-

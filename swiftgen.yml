@@ -1,0 +1,14 @@
+input_dir: AISwiftDemo/SupportFile/
+output_dir:  AISwiftDemo/SupportFile/SwiftGen/
+xcassets:
+  inputs:
+   - Assets.xcassets
+   - Colors.xcassets
+  outputs:
+    templateName: swift5
+    output: Assets.swift
+strings:
+    inputs: en.lproj
+    outputs:
+        templateName: structured-swift5
+        output: Strings.swift

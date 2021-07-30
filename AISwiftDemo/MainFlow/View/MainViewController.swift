@@ -21,12 +21,12 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         configureViewControllers()
-        self.tabBar.tintColor = UIColor.init(hexString: "#CB020C")
+        self.tabBar.tintColor = Asset.Colors.themeColor.color
     }
     
     func configureViewControllers() {
-        let myProfileImage = UIImage(named: "匡威风格人物4")?.withRenderingMode(.alwaysOriginal)
-        let myProfileItem = UITabBarItem(title: NSLocalizedString("tab_my", comment: ""),image: myProfileImage,tag: TabBarItemTag.myProfileItem.rawValue)
+        let myProfileImage = Asset.Assets.icon.image.withRenderingMode(.alwaysOriginal)
+        let myProfileItem = UITabBarItem(title: L10n.tabMy,image: myProfileImage,tag: TabBarItemTag.myProfileItem.rawValue)
         myProfileItem.selectedImage = myProfileImage
         let myProfileVC = MyProfileViewController()
         myProfileVC.tabBarItem = myProfileItem
