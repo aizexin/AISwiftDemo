@@ -29,6 +29,9 @@
 		45F57ED826B38F0C00D926E0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F57ED726B38F0C00D926E0 /* Colors.xcassets */; };
 		45F57EDA26B391B800D926E0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F57ED926B391B800D926E0 /* Assets.swift */; };
 		45F57EDD26B3955900D926E0 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F57EDC26B3955900D926E0 /* Strings.swift */; };
+		45F57EF126B399D400D926E0 /* .rubocop.yml in Resources */ = {isa = PBXBuildFile; fileRef = 45F57EF026B399D400D926E0 /* .rubocop.yml */; };
+		45F57EF526B39CFF00D926E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F57EF426B39CFF00D926E0 /* HomeViewController.swift */; };
+		45F57EF726B39D2F00D926E0 /* HomeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F57EF626B39D2F00D926E0 /* HomeBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		45F57ED926B391B800D926E0 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		45F57EDB26B3942A00D926E0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		45F57EDC26B3955900D926E0 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		45F57EF026B399D400D926E0 /* .rubocop.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .rubocop.yml; sourceTree = SOURCE_ROOT; };
+		45F57EF426B39CFF00D926E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		45F57EF626B39D2F00D926E0 /* HomeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseViewController.swift; sourceTree = "<group>"; };
 		636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9DE93B07C00C7A90CB63BD /* Pods-AISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F416205A6B526F49E72EA5A8 /* Pods-AISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AISwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 		4586712D265A8DBC00FDA592 /* AISwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				45F57EF226B39CD400D926E0 /* Home */,
 				45ECD348269825FB00F75B26 /* MyProfile */,
 				45ECD34426981E6E00F75B26 /* MainFlow */,
 				45ECD2EC2696E66700F75B26 /* DataBase */,
@@ -197,6 +204,7 @@
 				45F57ED226B3836C00D926E0 /* SwiftGen */,
 				4502BD2226B2418900A348A0 /* swiftgen.yml */,
 				45F57EDB26B3942A00D926E0 /* .swiftlint.yml */,
+				45F57EF026B399D400D926E0 /* .rubocop.yml */,
 				45867134265A8DBC00FDA592 /* Main.storyboard */,
 				45867137265A8DBD00FDA592 /* Assets.xcassets */,
 				45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */,
@@ -273,6 +281,23 @@
 				45F57EDC26B3955900D926E0 /* Strings.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		45F57EF226B39CD400D926E0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				45F57EF326B39CDF00D926E0 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		45F57EF326B39CDF00D926E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45F57EF426B39CFF00D926E0 /* HomeViewController.swift */,
+				45F57EF626B39D2F00D926E0 /* HomeBaseViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4B1C6D4CDC9CCAD486EBBEE9 /* Pods */ = {
@@ -403,6 +428,7 @@
 			files = (
 				4586713B265A8DBD00FDA592 /* LaunchScreen.storyboard in Resources */,
 				4502BD2326B2418900A348A0 /* swiftgen.yml in Resources */,
+				45F57EF126B399D400D926E0 /* .rubocop.yml in Resources */,
 				45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */,
 				45F57ED826B38F0C00D926E0 /* Colors.xcassets in Resources */,
 				45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */,
@@ -532,12 +558,14 @@
 				4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */,
 				45ECD34F26982B4700F75B26 /* MyProfileViewEnum.swift in Sources */,
 				45ECD34D269826AF00F75B26 /* MyProfileBaseViewController.swift in Sources */,
+				45F57EF726B39D2F00D926E0 /* HomeBaseViewController.swift in Sources */,
 				45ECD35126982BD300F75B26 /* MainFlowViewEnum.swift in Sources */,
 				45ECD3392697F2F900F75B26 /* ConfigureModel.swift in Sources */,
 				45ECD33E269813CC00F75B26 /* AIDebugLog.swift in Sources */,
 				45ECD34B2698263E00F75B26 /* MyProfileViewController.swift in Sources */,
 				45F57EDA26B391B800D926E0 /* Assets.swift in Sources */,
 				45ECD34326981E3E00F75B26 /* MainRouter.swift in Sources */,
+				45F57EF526B39CFF00D926E0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

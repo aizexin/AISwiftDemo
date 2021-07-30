@@ -8,5 +8,6 @@
 import Foundation
 //MARK: tabbar
 enum TabBarItemTag: Int {
-    case myProfileItem = 0
+    case homeItem = 0
+    case myProfileItem 
 }
