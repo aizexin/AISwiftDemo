@@ -9,14 +9,14 @@ import UIKit
 import ChameleonFramework
 
 class MainViewController: UITabBarController {
-    //MARK:- Define -------------
-    //MARK:- External -----------
-    //MARK:- Initial ------------
-    //MARK:- Networking ---------
-    //MARK:- Checking -----------
-    //MARK:- Delegate -----------
-    //MARK:- Action -------------
-    //MARK:- Tools --------------
+    // MARK: - Define -------------
+    // MARK: - External -----------
+    // MARK: - Initial ------------
+    // MARK: - Networking ---------
+    // MARK: - Checking -----------
+    // MARK: - Delegate -----------
+    // MARK: - Action -------------
+    // MARK: - Tools --------------
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white

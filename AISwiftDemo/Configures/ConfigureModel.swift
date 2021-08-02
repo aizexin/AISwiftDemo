@@ -10,7 +10,7 @@ import UIKit
 class ConfigureModel: NSObject {
     static let sharedInstance = ConfigureModel()
     
-    var configs = [String:AnyObject]()
+    var configs = [String: AnyObject]()
     
     override init() {
         super.init()
@@ -18,7 +18,7 @@ class ConfigureModel: NSObject {
         let path   = bundle.path(forResource: "Configuration", ofType: "plist", inDirectory: nil)
         let data = NSData(contentsOfFile: path ?? "")! as Data
         do {
-          configs  = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String:AnyObject]
+          configs  = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String: AnyObject]
         } catch {
             fatalError("Failed to parse config plist")
         }
