@@ -185,6 +185,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		451022BA26DCAF8C0046F24D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				45F57EF226B39CD400D926E0 /* Home */,
+				45ECD348269825FB00F75B26 /* MyProfile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		45867122265A8DBC00FDA592 = {
 			isa = PBXGroup;
 			children = (
@@ -210,8 +219,7 @@
 		4586712D265A8DBC00FDA592 /* AISwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				45F57EF226B39CD400D926E0 /* Home */,
-				45ECD348269825FB00F75B26 /* MyProfile */,
+				451022BA26DCAF8C0046F24D /* Modules */,
 				45ECD34426981E6E00F75B26 /* MainFlow */,
 				45ECD2EC2696E66700F75B26 /* DataBase */,
 				4510229E26DCAD610046F24D /* Debug */,
