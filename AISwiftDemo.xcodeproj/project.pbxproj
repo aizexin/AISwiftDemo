@@ -9,17 +9,30 @@
 /* Begin PBXBuildFile section */
 		16BB609EB39301964E989442 /* Pods_AISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636B37FD70B2B326FB1CA967 /* Pods_AISwiftDemo.framework */; };
 		4502BD2326B2418900A348A0 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4502BD2226B2418900A348A0 /* swiftgen.yml */; };
+		451022AD26DCAD610046F24D /* AICompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510229F26DCAD610046F24D /* AICompatible.swift */; };
+		451022AE26DCAD610046F24D /* DebugPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A126DCAD610046F24D /* DebugPresenter.swift */; };
+		451022AF26DCAD610046F24D /* DebugPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A226DCAD610046F24D /* DebugPresenterProtocol.swift */; };
+		451022B026DCAD610046F24D /* AIDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A326DCAD610046F24D /* AIDebugLog.swift */; };
+		451022B126DCAD610046F24D /* DebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451022A526DCAD610046F24D /* DebugViewController.xib */; };
+		451022B226DCAD610046F24D /* DebugLocalFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A626DCAD610046F24D /* DebugLocalFileViewController.swift */; };
+		451022B326DCAD610046F24D /* DebugLogFileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A726DCAD610046F24D /* DebugLogFileListViewController.swift */; };
+		451022B426DCAD610046F24D /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A826DCAD610046F24D /* DebugViewController.swift */; };
+		451022B526DCAD610046F24D /* DebugViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022A926DCAD610046F24D /* DebugViewType.swift */; };
+		451022B626DCAD610046F24D /* DebugRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022AB26DCAD610046F24D /* DebugRouter.swift */; };
+		451022B726DCAD610046F24D /* DebugEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022AC26DCAD610046F24D /* DebugEnum.swift */; };
+		451022B926DCAE630046F24D /* ViewControllerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022B826DCAE630046F24D /* ViewControllerEnum.swift */; };
 		4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586712E265A8DBC00FDA592 /* AppDelegate.swift */; };
 		45867136265A8DBC00FDA592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45867134265A8DBC00FDA592 /* Main.storyboard */; };
 		45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45867137265A8DBD00FDA592 /* Assets.xcassets */; };
 		4586713B265A8DBD00FDA592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */; };
 		45867146265A8DBD00FDA592 /* AISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867145265A8DBD00FDA592 /* AISwiftDemoTests.swift */; };
 		45867151265A8DBD00FDA592 /* AISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */; };
+		45D425DB26CD002400FAA2F8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D425DA26CD002400FAA2F8 /* MainPresenter.swift */; };
+		45D425DD26CD004A00FAA2F8 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D425DC26CD004A00FAA2F8 /* MainPresenterProtocol.swift */; };
 		45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45ECD2E72696CCED00F75B26 /* Localizable.strings */; };
 		45ECD3392697F2F900F75B26 /* ConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3382697F2F900F75B26 /* ConfigureModel.swift */; };
 		45ECD33A2697F2F900F75B26 /* ConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3382697F2F900F75B26 /* ConfigureModel.swift */; };
 		45ECD33B2697F2F900F75B26 /* ConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3382697F2F900F75B26 /* ConfigureModel.swift */; };
-		45ECD33E269813CC00F75B26 /* AIDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD33D269813CC00F75B26 /* AIDebugLog.swift */; };
 		45ECD34326981E3E00F75B26 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD34226981E3E00F75B26 /* MainRouter.swift */; };
 		45ECD3472698257A00F75B26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD3462698257A00F75B26 /* MainViewController.swift */; };
 		45ECD34B2698263E00F75B26 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ECD34A2698263E00F75B26 /* MyProfileViewController.swift */; };
@@ -53,6 +66,18 @@
 
 /* Begin PBXFileReference section */
 		4502BD2226B2418900A348A0 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		4510229F26DCAD610046F24D /* AICompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AICompatible.swift; sourceTree = "<group>"; };
+		451022A126DCAD610046F24D /* DebugPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugPresenter.swift; sourceTree = "<group>"; };
+		451022A226DCAD610046F24D /* DebugPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugPresenterProtocol.swift; sourceTree = "<group>"; };
+		451022A326DCAD610046F24D /* AIDebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIDebugLog.swift; sourceTree = "<group>"; };
+		451022A526DCAD610046F24D /* DebugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugViewController.xib; sourceTree = "<group>"; };
+		451022A626DCAD610046F24D /* DebugLocalFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLocalFileViewController.swift; sourceTree = "<group>"; };
+		451022A726DCAD610046F24D /* DebugLogFileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLogFileListViewController.swift; sourceTree = "<group>"; };
+		451022A826DCAD610046F24D /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		451022A926DCAD610046F24D /* DebugViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewType.swift; sourceTree = "<group>"; };
+		451022AB26DCAD610046F24D /* DebugRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugRouter.swift; sourceTree = "<group>"; };
+		451022AC26DCAD610046F24D /* DebugEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugEnum.swift; sourceTree = "<group>"; };
+		451022B826DCAE630046F24D /* ViewControllerEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEnum.swift; sourceTree = "<group>"; };
 		4586712B265A8DBC00FDA592 /* AISwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4586712E265A8DBC00FDA592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45867135265A8DBC00FDA592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +90,8 @@
 		4586714C265A8DBD00FDA592 /* AISwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AISwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISwiftDemoUITests.swift; sourceTree = "<group>"; };
 		45867152265A8DBD00FDA592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D425DA26CD002400FAA2F8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		45D425DC26CD004A00FAA2F8 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
 		45ECD2E12696A75100F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		45ECD2E22696A75100F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		45ECD2E62696CCED00F75B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -72,7 +99,6 @@
 		45ECD2F02697F2F100F75B26 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		45ECD2FA2697F2F100F75B26 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		45ECD3382697F2F900F75B26 /* ConfigureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureModel.swift; sourceTree = "<group>"; };
-		45ECD33D269813CC00F75B26 /* AIDebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDebugLog.swift; sourceTree = "<group>"; };
 		45ECD34226981E3E00F75B26 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		45ECD3462698257A00F75B26 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		45ECD34A2698263E00F75B26 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +143,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4510229E26DCAD610046F24D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				4510229F26DCAD610046F24D /* AICompatible.swift */,
+				451022A026DCAD610046F24D /* Presenter */,
+				451022A326DCAD610046F24D /* AIDebugLog.swift */,
+				451022A426DCAD610046F24D /* View */,
+				451022AA26DCAD610046F24D /* Router */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		451022A026DCAD610046F24D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				451022A126DCAD610046F24D /* DebugPresenter.swift */,
+				451022A226DCAD610046F24D /* DebugPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		451022A426DCAD610046F24D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				451022A526DCAD610046F24D /* DebugViewController.xib */,
+				451022A626DCAD610046F24D /* DebugLocalFileViewController.swift */,
+				451022A726DCAD610046F24D /* DebugLogFileListViewController.swift */,
+				451022A826DCAD610046F24D /* DebugViewController.swift */,
+				451022A926DCAD610046F24D /* DebugViewType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		451022AA26DCAD610046F24D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				451022AB26DCAD610046F24D /* DebugRouter.swift */,
+				451022AC26DCAD610046F24D /* DebugEnum.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		45867122265A8DBC00FDA592 = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +214,7 @@
 				45ECD348269825FB00F75B26 /* MyProfile */,
 				45ECD34426981E6E00F75B26 /* MainFlow */,
 				45ECD2EC2696E66700F75B26 /* DataBase */,
-				45ECD2EB2696E64100F75B26 /* Debug */,
+				4510229E26DCAD610046F24D /* Debug */,
 				45ECD2EA2696E5DF00F75B26 /* Configures */,
 				45ECD2ED2696EA3700F75B26 /* SupportFile */,
 				4586712E265A8DBC00FDA592 /* AppDelegate.swift */,
@@ -173,6 +241,22 @@
 			path = AISwiftDemoUITests;
 			sourceTree = "<group>";
 		};
+		45D425D926CCFFFC00FAA2F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				45D425DA26CD002400FAA2F8 /* MainPresenter.swift */,
+				45D425DC26CD004A00FAA2F8 /* MainPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		45D425DE26CD00B200FAA2F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		45ECD2EA2696E5DF00F75B26 /* Configures */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,14 +265,6 @@
 				45ECD2F82697F2F100F75B26 /* Release */,
 			);
 			path = Configures;
-			sourceTree = "<group>";
-		};
-		45ECD2EB2696E64100F75B26 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				45ECD33D269813CC00F75B26 /* AIDebugLog.swift */,
-			);
-			path = Debug;
 			sourceTree = "<group>";
 		};
 		45ECD2EC2696E66700F75B26 /* DataBase */ = {
@@ -233,6 +309,7 @@
 		45ECD34126981E0200F75B26 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				451022B826DCAE630046F24D /* ViewControllerEnum.swift */,
 				45ECD34226981E3E00F75B26 /* MainRouter.swift */,
 			);
 			path = Router;
@@ -241,6 +318,8 @@
 		45ECD34426981E6E00F75B26 /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				45D425DE26CD00B200FAA2F8 /* Interactor */,
+				45D425D926CCFFFC00FAA2F8 /* Presenter */,
 				45ECD34526981E8800F75B26 /* View */,
 				45ECD34126981E0200F75B26 /* Router */,
 			);
@@ -432,6 +511,7 @@
 				45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */,
 				45F57ED826B38F0C00D926E0 /* Colors.xcassets in Resources */,
 				45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */,
+				451022B126DCAD610046F24D /* DebugViewController.xib in Resources */,
 				45867136265A8DBC00FDA592 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,18 +633,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D425DD26CD004A00FAA2F8 /* MainPresenterProtocol.swift in Sources */,
+				451022B626DCAD610046F24D /* DebugRouter.swift in Sources */,
 				45ECD3472698257A00F75B26 /* MainViewController.swift in Sources */,
+				451022B926DCAE630046F24D /* ViewControllerEnum.swift in Sources */,
 				45F57EDD26B3955900D926E0 /* Strings.swift in Sources */,
+				451022B326DCAD610046F24D /* DebugLogFileListViewController.swift in Sources */,
 				4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */,
+				451022B726DCAD610046F24D /* DebugEnum.swift in Sources */,
 				45ECD34F26982B4700F75B26 /* MyProfileViewEnum.swift in Sources */,
 				45ECD34D269826AF00F75B26 /* MyProfileBaseViewController.swift in Sources */,
+				451022B026DCAD610046F24D /* AIDebugLog.swift in Sources */,
+				45D425DB26CD002400FAA2F8 /* MainPresenter.swift in Sources */,
 				45F57EF726B39D2F00D926E0 /* HomeBaseViewController.swift in Sources */,
+				451022AF26DCAD610046F24D /* DebugPresenterProtocol.swift in Sources */,
+				451022AD26DCAD610046F24D /* AICompatible.swift in Sources */,
 				45ECD35126982BD300F75B26 /* MainFlowViewEnum.swift in Sources */,
 				45ECD3392697F2F900F75B26 /* ConfigureModel.swift in Sources */,
-				45ECD33E269813CC00F75B26 /* AIDebugLog.swift in Sources */,
 				45ECD34B2698263E00F75B26 /* MyProfileViewController.swift in Sources */,
+				451022B426DCAD610046F24D /* DebugViewController.swift in Sources */,
+				451022B526DCAD610046F24D /* DebugViewType.swift in Sources */,
 				45F57EDA26B391B800D926E0 /* Assets.swift in Sources */,
 				45ECD34326981E3E00F75B26 /* MainRouter.swift in Sources */,
+				451022AE26DCAD610046F24D /* DebugPresenter.swift in Sources */,
+				451022B226DCAD610046F24D /* DebugLocalFileViewController.swift in Sources */,
 				45F57EF526B39CFF00D926E0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

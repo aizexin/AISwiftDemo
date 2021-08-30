@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ChameleonFramework
 
 class MainViewController: UITabBarController {
     // MARK: - Define -------------

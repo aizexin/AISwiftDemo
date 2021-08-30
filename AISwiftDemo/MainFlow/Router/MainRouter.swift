@@ -8,5 +8,20 @@
 import UIKit
 
 class MainRouter: NSObject {
+    static let shared = MainRouter()
+    private override init() {}
     
+    func perfromJump(from: UIViewController?, vc: ModulesType, params: [String: Any] = [:]) {
+        switch vc {
+        case .home:
+            break
+        case .myProfile:
+            break
+        case .debug:
+            let presenter = DebugPresenter<DebugViewAction>()
+            let debugVC = DebugViewController<DebugPresenter>.init(presenter: presenter, nibName: "DebugViewController", bundle: Bundle.main)
+            let nav = UINavigationController(rootViewController: debugVC)
+            from?.present(nav, animated: true, completion: nil)
+        }
+    }
 }

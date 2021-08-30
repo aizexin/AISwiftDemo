@@ -1,26 +1,24 @@
 PODS:
-  - ChameleonFramework (2.1.0):
-    - ChameleonFramework/Default (= 2.1.0)
-  - ChameleonFramework/Default (2.1.0)
+  - DateToolsSwift (5.0.0)
   - SwiftGen (6.4.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - ChameleonFramework
+  - DateToolsSwift
   - SwiftGen (~> 6.0)
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - ChameleonFramework
+    - DateToolsSwift
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
-  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: f6d0bd83da5c1aa0bf4c7875798883a92cf4477e
+PODFILE CHECKSUM: 7cdde3ede4de4572fa66482b1511e423c4f79854
 
 COCOAPODS: 1.10.1
