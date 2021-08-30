@@ -18,6 +18,7 @@ class DebugLogFileListViewController: UIViewController {
         super.viewDidLoad()
         configureData()
         configureUI()
+        configureNavigation()
     }
     // MARK: - Initial ---------
     func configureData() {
@@ -29,6 +30,17 @@ class DebugLogFileListViewController: UIViewController {
         self.tableview.dataSource = self
         self.view.addSubview(tableview)
     }
+    func configureNavigation() {
+        let rightBtn = UIBarButtonItem(title: "delete", style: .plain, target: self, action: #selector(deleteAllFile))
+        rightBtn.tintColor = Asset.Colors.themeColor.color
+        self.navigationItem.rightBarButtonItem = rightBtn
+    }
+    // MARK: - action ---------
+    @objc func deleteAllFile() {
+        self.dataSource = []
+        self.tableview.reloadData()
+        AIDebugLog.shared.deleteAllLogFile()
+    }
 }
 
 // MARK: - Delegate -----------
@@ -36,6 +48,19 @@ extension DebugLogFileListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let params = ["filePath": self.dataSource[indexPath.row]]
         DebugRouter.shared.perfromJump(from: self, vc: .debug_openLogFile, params: params)
+    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let fullPath = self.dataSource[indexPath.row]
+        deleteFielWithPath(path: fullPath)
+        self.dataSource.remove(at: indexPath.row)
+        tableview.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        return
     }
 }
 extension DebugLogFileListViewController: UITableViewDataSource {

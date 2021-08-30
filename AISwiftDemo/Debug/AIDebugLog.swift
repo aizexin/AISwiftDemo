@@ -45,6 +45,9 @@ class AIDebugLog: NSObject {
         self.pathDocuments = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         self.folderPath    = pathDocuments + "/CLLog"
     }
+    func deleteAllLogFile() {
+        deleteFielWithPath(path: folderPath)
+    }
 }
 
 func print<T>(_ msg: T, file: NSString = #file, line: Int = #line, function: String = #function, isInputFile: Bool = AIDebugLog.shared.isInputFile) {
@@ -80,6 +83,15 @@ func findAllFile(type: String, folderPath: String, maxCount: Int = .max) -> [Str
         }
     }
     return fileArray
+}
+
+func deleteFielWithPath(path: String) {
+    let manager = FileManager.default
+    do {
+        try manager.removeItem(atPath: path)
+    } catch {
+        print("删除文件失败", isInputFile: false)
+    }
 }
 
 extension String {

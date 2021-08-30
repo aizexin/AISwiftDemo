@@ -147,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				4510229F26DCAD610046F24D /* AICompatible.swift */,
-				451022A026DCAD610046F24D /* Presenter */,
 				451022A326DCAD610046F24D /* AIDebugLog.swift */,
+				451022A026DCAD610046F24D /* Presenter */,
 				451022A426DCAD610046F24D /* View */,
 				451022AA26DCAD610046F24D /* Router */,
 			);
