@@ -19,6 +19,7 @@ def debug_pods
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.0'
   pod 'DateToolsSwift'
+  pod 'SwiftFormat/CLI'
 #  pod 'HockeySDK'
 #  pod 'XFAssistiveTouch'
 #  pod 'FLEX', '~> 2.0'

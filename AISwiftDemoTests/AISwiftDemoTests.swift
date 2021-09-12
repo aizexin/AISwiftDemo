@@ -5,11 +5,10 @@
 //  Created by aizexin on 2021/5/23.
 //
 
-import XCTest
 @testable import AISwiftDemo
+import XCTest
 
 class AISwiftDemoTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,5 +28,4 @@ class AISwiftDemoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

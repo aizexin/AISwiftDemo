@@ -8,11 +8,12 @@
 import Foundation
 
 protocol DebugPresenterType: AnyObject {
-    
     associatedtype Interactor: DebugInteractorType
     associatedtype Action: DebugActionType
-    
+
     var interactor: Interactor { get }
+
     // MARK: - view action -> Presenter ---------
+
     func perfromAction(_ action: DebugViewAction)
 }

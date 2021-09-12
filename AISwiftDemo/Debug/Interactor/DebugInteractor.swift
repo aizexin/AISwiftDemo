@@ -7,6 +7,4 @@
 
 import UIKit
 
-class DebugInteractor: NSObject, DebugInteractorType {
-
-}
+class DebugInteractor: NSObject, DebugInteractorType {}

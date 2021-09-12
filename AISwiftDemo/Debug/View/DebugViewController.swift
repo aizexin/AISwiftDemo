@@ -9,36 +9,42 @@ import UIKit
 
 class DebugViewController<P: DebugPresenterType>: UIViewController, DebugViewType {
     // MARK: - property --
+
     let presenter: P
-    
-    @IBOutlet weak var ipTextField: UITextField!
-    @IBOutlet weak var isWriteInFile: UISwitch!
-    
+
+    @IBOutlet var ipTextField: UITextField!
+    @IBOutlet var isWriteInFile: UISwitch!
+
     // MARK: - Initial ---------
+
     init(presenter: P, nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.presenter = presenter
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
-    required init?(coder: NSCoder) {
+
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.isWriteInFile.setOn(AIDebugLog.shared.isInputFile, animated: false)
     }
-    
+
     // MARK: - action --
-    @IBAction func checkAllLog(_ sender: Any) {
+
+    @IBAction func checkAllLog(_: Any) {
         presenter.perfromAction(.checkAllLog(fromVC: self))
     }
+
     @IBAction func onClickSwitchLoginFile(_ sender: UISwitch) {
         presenter.perfromAction(.onClickSwitchLoginFile(isIn: sender.isOn))
     }
-    @IBAction func onClickEnter(_ sender: Any) {
-        
-    }
-    @IBAction func onClickPrintFilePath(_ sender: Any) {
+
+    @IBAction func onClickEnter(_: Any) {}
+
+    @IBAction func onClickPrintFilePath(_: Any) {
         presenter.perfromAction(.onClickPrintFilePath(text: ipTextField.text ?? ""))
     }
 }

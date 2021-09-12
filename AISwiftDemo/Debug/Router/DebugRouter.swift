@@ -9,8 +9,10 @@ import UIKit
 
 class DebugRouter: NSObject {
     static let shared = DebugRouter()
-    private override init() {}
+    override private init() {}
+
     // MARK: - debug 模块内跳转方法 ---------
+
     func perfromJump(from: UIViewController?, vc: DebugViewControllerType, params: [String: Any] = [:]) {
         switch vc {
         case .debug_logList:

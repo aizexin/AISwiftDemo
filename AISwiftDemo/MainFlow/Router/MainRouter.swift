@@ -9,9 +9,9 @@ import UIKit
 
 class MainRouter: NSObject {
     static let shared = MainRouter()
-    private override init() {}
-    
-    func perfromJump(from: UIViewController?, vc: ModulesType, params: [String: Any] = [:]) {
+    override private init() {}
+
+    func perfromJump(from: UIViewController?, vc: ModulesType, params _: [String: Any] = [:]) {
         switch vc {
         case .home:
             break

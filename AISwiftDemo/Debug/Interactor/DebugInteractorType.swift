@@ -7,6 +7,4 @@
 
 import UIKit
 
-protocol DebugInteractorType: AnyObject {
-    
-}
+protocol DebugInteractorType: AnyObject {}

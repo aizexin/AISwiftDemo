@@ -29,9 +29,9 @@ public protocol AICompatible {
     var ai: AI<CompatibleType> { get set }
 }
 
-extension AICompatible {
+public extension AICompatible {
     /// AI extensions.
-    public static var ai: AI<Self>.Type {
+    static var ai: AI<Self>.Type {
         get {
             return AI<Self>.self
         }
@@ -41,7 +41,7 @@ extension AICompatible {
     }
 
     /// AI extensions.
-    public var ai: AI<Self> {
+    var ai: AI<Self> {
         get {
             return AI(self)
         }
@@ -53,4 +53,4 @@ extension AICompatible {
 
 import class Foundation.NSObject
 
-extension NSObject: AICompatible { }
+extension NSObject: AICompatible {}

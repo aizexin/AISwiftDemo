@@ -8,18 +8,19 @@
 import UIKit
 
 class DebugPresenter<PerfromAction: DebugActionType>: DebugPresenterType {
-        
     let interactor = DebugInteractor()
-    
+
     typealias Action = DebugViewAction
+
     // MARK: - view action -> Presenter ---------
+
     func perfromAction(_ action: Action) {
         switch action {
         case let .checkAllLog(fromVC):
             DebugRouter.shared.perfromJump(from: fromVC, vc: .debug_logList)
         case let .onClickSwitchLoginFile(isIn):
             AIDebugLog.shared.isInputFile = isIn
-        case .onClickEnter(_):
+        case .onClickEnter:
             break
         case let .onClickPrintFilePath(text):
             print(text)
@@ -35,5 +36,4 @@ enum DebugViewAction: DebugActionType {
     case onClickPrintFilePath(text: String)
 }
 
-protocol DebugActionType {
-}
+protocol DebugActionType {}

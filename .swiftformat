@@ -1,0 +1,8 @@
+# file options
+--exclude Pods,SupportFile,SwiftGen
+
+# rules
+--disable elseOnSameLine,semicolons,redundantSelf,redundantInit
+# Known issues
+#//swiftformat:disable:next redundantInit
+#--selfrequired min,max

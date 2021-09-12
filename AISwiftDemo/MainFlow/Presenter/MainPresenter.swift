@@ -7,6 +7,4 @@
 
 import UIKit
 
-class MainPresenter: NSObject {
-
-}
+class MainPresenter: NSObject {}

@@ -5,17 +5,19 @@
 //  Created by aizexin on 2021/7/9.
 //
 
-import UIKit
 import DateToolsSwift
+import UIKit
 
 class AIDebugLog: NSObject {
     static let shared = AIDebugLog()
+
     // MARK: - property ---------
+
     var isInputFile: Bool = false
     /// 沙盒路径
     private var pathDocuments: String!
-    private (set) var folderPath: String!
-    fileprivate var logQueue: DispatchQueue = DispatchQueue(label: "CLLogManager.logQueue")
+    private(set) var folderPath: String!
+    fileprivate var logQueue = DispatchQueue(label: "CLLogManager.logQueue")
     fileprivate lazy var logFileHandle: FileHandle? = {
         let fileManager = FileManager.default
         if !fileManager.fileExists(atPath: folderPath) {
@@ -33,19 +35,23 @@ class AIDebugLog: NSObject {
         fileHandle?.truncateFile(atOffset: 0)
         return fileHandle
     }()
+
     /// log路径数组
     class var logPathArray: [String] {
-        return findAllFile(type: "log", folderPath: shared.folderPath).sorted { (path1, path2) -> Bool in
+        return findAllFile(type: "log", folderPath: shared.folderPath).sorted { path1, path2 -> Bool in
             let date1 = Date(dateString: (path1.lastPathComponent as NSString).deletingPathExtension, format: "yyyy-MM-dd HH:mm:ss")
             let date2 = Date(dateString: (path2.lastPathComponent as NSString).deletingPathExtension, format: "yyyy-MM-dd HH:mm:ss")
             return date1.isLater(than: date2)
         }
     }
-    private override init() {
+
+    override private init() {
         self.pathDocuments = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
-        self.folderPath    = pathDocuments + "/CLLog"
+        self.folderPath = pathDocuments + "/CLLog"
     }
+
     // MARK: - operation file ---------
+
     func deleteAllLogFile() {
         deleteFielWithPath(path: folderPath)
     }
@@ -53,15 +59,15 @@ class AIDebugLog: NSObject {
 
 func print<T>(_ msg: T, file: NSString = #file, line: Int = #line, function: String = #function, isInputFile: Bool = AIDebugLog.shared.isInputFile) {
     #if DEBUG
-    let prefix = "\(file.lastPathComponent)_\(line)_\(function):"
-    print(prefix, msg)
+        let prefix = "\(file.lastPathComponent)_\(line)_\(function):"
+        print(prefix, msg)
     #endif
     if isInputFile {
         AIDebugLog.shared.logQueue.async {
             guard let output = AIDebugLog.shared.logFileHandle else {
                 return
             }
-            guard var text = msg as? String else {return}
+            guard var text = msg as? String else { return }
             text = prefix + " " + text + "\n"
             if let textData = text.data(using: .utf8) {
                 output.write(textData)
@@ -71,6 +77,7 @@ func print<T>(_ msg: T, file: NSString = #file, line: Int = #line, function: Str
 }
 
 // MARK: - file ---------
+
 /// 查找路径及其子路径下所有指定类型文件
 func findAllFile(type: String, folderPath: String, maxCount: Int = .max) -> [String] {
     let manager = FileManager.default
@@ -101,6 +108,7 @@ extension String {
     var lastPathComponent: String {
         return (self as NSString).lastPathComponent
     }
+
     /// 文件后缀
     var pathExtension: String {
         return (self as NSString).pathExtension

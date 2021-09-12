@@ -21,6 +21,7 @@
 		451022B626DCAD610046F24D /* DebugRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022AB26DCAD610046F24D /* DebugRouter.swift */; };
 		451022B726DCAD610046F24D /* DebugEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022AC26DCAD610046F24D /* DebugEnum.swift */; };
 		451022B926DCAE630046F24D /* ViewControllerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451022B826DCAE630046F24D /* ViewControllerEnum.swift */; };
+		4570FB1126EDA12200401D67 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = 4570FB1026EDA12200401D67 /* .swiftformat */; };
 		4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586712E265A8DBC00FDA592 /* AppDelegate.swift */; };
 		45867136265A8DBC00FDA592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45867134265A8DBC00FDA592 /* Main.storyboard */; };
 		45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45867137265A8DBD00FDA592 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		451022AB26DCAD610046F24D /* DebugRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugRouter.swift; sourceTree = "<group>"; };
 		451022AC26DCAD610046F24D /* DebugEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugEnum.swift; sourceTree = "<group>"; };
 		451022B826DCAE630046F24D /* ViewControllerEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEnum.swift; sourceTree = "<group>"; };
+		4570FB1026EDA12200401D67 /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = SOURCE_ROOT; };
 		4586712B265A8DBC00FDA592 /* AISwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4586712E265A8DBC00FDA592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45867135265A8DBC00FDA592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				45F57ED226B3836C00D926E0 /* SwiftGen */,
 				4502BD2226B2418900A348A0 /* swiftgen.yml */,
+				4570FB1026EDA12200401D67 /* .swiftformat */,
 				45F57EDB26B3942A00D926E0 /* .swiftlint.yml */,
 				45F57EF026B399D400D926E0 /* .rubocop.yml */,
 				45867134265A8DBC00FDA592 /* Main.storyboard */,
@@ -432,7 +435,8 @@
 				45ECD2E02695ABB800F75B26 /* Run Script swiftLint */,
 				45ECD2E92696D07200F75B26 /* Run Script swiftGen */,
 				45ECD33C2697F77100F75B26 /* Run Script configures */,
-				2DE0D9ECC4A076B60E8CBDAC /* [CP] Embed Pods Frameworks */,
+				4570FB0F26ED968800401D67 /* Run Script swiftFormat */,
+				7026097BFECB218500F2D79B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -535,6 +539,7 @@
 				45867138265A8DBD00FDA592 /* Assets.xcassets in Resources */,
 				451022B126DCAD610046F24D /* DebugViewController.xib in Resources */,
 				45867136265A8DBC00FDA592 /* Main.storyboard in Resources */,
+				4570FB1126EDA12200401D67 /* .swiftformat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,22 +560,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2DE0D9ECC4A076B60E8CBDAC /* [CP] Embed Pods Frameworks */ = {
+		4570FB0F26ED968800401D67 /* Run Script swiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "Run Script swiftFormat";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\"\n";
 		};
 		45ECD2E02695ABB800F75B26 /* Run Script swiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -625,6 +631,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"CONFIGURATION -> ${CONFIGURATION}\"\nRESOURCE_PATH=${SRCROOT}/${PRODUCT_NAME}/Configures/${CONFIGURATION}\n\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho \"Copying all files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"\n";
+		};
+		7026097BFECB218500F2D79B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AISwiftDemo/Pods-AISwiftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		EB36B793B276B6989316884B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

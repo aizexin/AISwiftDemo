@@ -6,4 +6,3 @@
 //  主流程 view层的枚举
 
 import Foundation
-
