@@ -27,6 +27,8 @@
 		4586713B265A8DBD00FDA592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45867139265A8DBD00FDA592 /* LaunchScreen.storyboard */; };
 		45867146265A8DBD00FDA592 /* AISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867145265A8DBD00FDA592 /* AISwiftDemoTests.swift */; };
 		45867151265A8DBD00FDA592 /* AISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */; };
+		45C712BB26DCC98C001DA687 /* DebugInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C712BA26DCC98C001DA687 /* DebugInteractor.swift */; };
+		45C712BD26DCD58E001DA687 /* DebugInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C712BC26DCD58E001DA687 /* DebugInteractorType.swift */; };
 		45D425DB26CD002400FAA2F8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D425DA26CD002400FAA2F8 /* MainPresenter.swift */; };
 		45D425DD26CD004A00FAA2F8 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D425DC26CD004A00FAA2F8 /* MainPresenterProtocol.swift */; };
 		45ECD2E52696CCED00F75B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45ECD2E72696CCED00F75B26 /* Localizable.strings */; };
@@ -90,6 +92,8 @@
 		4586714C265A8DBD00FDA592 /* AISwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AISwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45867150265A8DBD00FDA592 /* AISwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISwiftDemoUITests.swift; sourceTree = "<group>"; };
 		45867152265A8DBD00FDA592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45C712BA26DCC98C001DA687 /* DebugInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugInteractor.swift; sourceTree = "<group>"; };
+		45C712BC26DCD58E001DA687 /* DebugInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugInteractorType.swift; sourceTree = "<group>"; };
 		45D425DA26CD002400FAA2F8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		45D425DC26CD004A00FAA2F8 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
 		45ECD2E12696A75100F75B26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		4510229E26DCAD610046F24D /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				45C712B926DCC937001DA687 /* Interactor */,
 				4510229F26DCAD610046F24D /* AICompatible.swift */,
 				451022A326DCAD610046F24D /* AIDebugLog.swift */,
 				451022A026DCAD610046F24D /* Presenter */,
@@ -247,6 +252,15 @@
 				45867152265A8DBD00FDA592 /* Info.plist */,
 			);
 			path = AISwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		45C712B926DCC937001DA687 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				45C712BA26DCC98C001DA687 /* DebugInteractor.swift */,
+				45C712BC26DCD58E001DA687 /* DebugInteractorType.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		45D425D926CCFFFC00FAA2F8 /* Presenter */ = {
@@ -647,6 +661,7 @@
 				451022B926DCAE630046F24D /* ViewControllerEnum.swift in Sources */,
 				45F57EDD26B3955900D926E0 /* Strings.swift in Sources */,
 				451022B326DCAD610046F24D /* DebugLogFileListViewController.swift in Sources */,
+				45C712BD26DCD58E001DA687 /* DebugInteractorType.swift in Sources */,
 				4586712F265A8DBC00FDA592 /* AppDelegate.swift in Sources */,
 				451022B726DCAD610046F24D /* DebugEnum.swift in Sources */,
 				45ECD34F26982B4700F75B26 /* MyProfileViewEnum.swift in Sources */,
@@ -661,6 +676,7 @@
 				45ECD34B2698263E00F75B26 /* MyProfileViewController.swift in Sources */,
 				451022B426DCAD610046F24D /* DebugViewController.swift in Sources */,
 				451022B526DCAD610046F24D /* DebugViewType.swift in Sources */,
+				45C712BB26DCC98C001DA687 /* DebugInteractor.swift in Sources */,
 				45F57EDA26B391B800D926E0 /* Assets.swift in Sources */,
 				45ECD34326981E3E00F75B26 /* MainRouter.swift in Sources */,
 				451022AE26DCAD610046F24D /* DebugPresenter.swift in Sources */,

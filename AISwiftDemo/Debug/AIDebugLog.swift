@@ -45,6 +45,7 @@ class AIDebugLog: NSObject {
         self.pathDocuments = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
         self.folderPath    = pathDocuments + "/CLLog"
     }
+    // MARK: - operation file ---------
     func deleteAllLogFile() {
         deleteFielWithPath(path: folderPath)
     }
@@ -69,6 +70,7 @@ func print<T>(_ msg: T, file: NSString = #file, line: Int = #line, function: Str
     }
 }
 
+// MARK: - file ---------
 /// 查找路径及其子路径下所有指定类型文件
 func findAllFile(type: String, folderPath: String, maxCount: Int = .max) -> [String] {
     let manager = FileManager.default

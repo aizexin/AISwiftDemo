@@ -8,6 +8,9 @@
 import UIKit
 
 class DebugPresenter<PerfromAction: DebugActionType>: DebugPresenterType {
+        
+    let interactor = DebugInteractor()
+    
     typealias Action = DebugViewAction
     // MARK: - view action -> Presenter ---------
     func perfromAction(_ action: Action) {
